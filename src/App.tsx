@@ -128,7 +128,7 @@ export default function App() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h1 className="text-5xl md:text-8xl font-display font-bold leading-[0.85] mb-8 tracking-tighter text-white">
+              <h1 className="text-4xl sm:text-5xl md:text-8xl font-display font-bold leading-[1.1] md:leading-[0.85] mb-6 md:mb-8 tracking-tighter text-white">
               JOSEPHIN <br />
               <span className="text-gold-500 italic">SUGANTHI</span>
             </h1>
@@ -136,7 +136,7 @@ export default function App() {
               <div className="h-[1px] w-12 bg-gold-500/50" />
               <span className="text-sm md:text-base text-slate-400 font-light tracking-[0.3em] uppercase">Senior Structural Engineer</span>
             </div>
-            <p className="text-slate-400 text-lg max-w-lg mb-12 leading-relaxed font-light">
+            <p className="text-slate-400 text-sm sm:text-base md:text-lg max-w-lg mb-8 md:mb-12 leading-relaxed font-light">
               Senior Structural Engineer specializing in high-rise stability, post-tensioned slabs, and complex foundation systems. Expert in Dubai/UAE building codes (DDA, DM, RAK Authority) with a focus on precision and landmark development.
             </p>
             
@@ -149,9 +149,9 @@ export default function App() {
                 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => scrollToSection('projects')}
-                className="px-10 py-4 bg-gold-500 text-slate-950 font-bold rounded-full flex items-center gap-2 group transition-all duration-300"
+                className="px-8 py-3 md:px-10 md:py-4 bg-gold-500 text-slate-950 text-sm md:text-base font-bold rounded-full flex items-center justify-center gap-2 group transition-all duration-300 w-full sm:w-auto"
               >
-                View Projects <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                View Projects <ArrowRight className="w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1 transition-transform" />
               </motion.button>
             </div>
           </motion.div>
@@ -160,22 +160,22 @@ export default function App() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
-            className="relative"
+            className="relative mt-8 lg:mt-0"
           >
-            <div className="aspect-square md:aspect-[4/5] rounded-[40px] overflow-hidden border border-slate-800 bg-slate-900 relative group shadow-2xl">
+            <div className="aspect-[4/3] sm:aspect-square md:aspect-[4/5] rounded-3xl md:rounded-[40px] overflow-hidden border border-slate-800 bg-slate-900 relative group shadow-2xl">
               <img
                 src="/Images/Front.jpg"
                 alt="Structural Project"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 referrerPolicy="no-referrer"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
-              <div className="absolute bottom-8 left-8 right-8">
-                <div className="flex items-center gap-4 mb-2">
-                  <div className="w-12 h-[1px] bg-gold-500" />
-                  <span className="text-gold-500 font-mono text-sm uppercase tracking-widest">Dubai, UAE</span>
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent" />
+              <div className="absolute bottom-6 left-6 right-6 md:bottom-8 md:left-8 md:right-8">
+                <div className="flex items-center gap-3 md:gap-4 mb-2">
+                  <div className="w-8 md:w-12 h-[1px] bg-gold-500" />
+                  <span className="text-gold-500 font-mono text-xs md:text-sm uppercase tracking-widest">Dubai, UAE</span>
                 </div>
-                <h3 className="text-2xl font-display font-bold text-white">Structural Excellence</h3>
+                <h3 className="text-xl md:text-2xl font-display font-bold text-white">Structural Excellence</h3>
               </div>
             </div>
             
